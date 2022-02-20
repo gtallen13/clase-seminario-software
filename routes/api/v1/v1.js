@@ -13,5 +13,10 @@ router.use(
   verifyApiHeaderToken,
   pacientesRoutes
 );
+router.use(
+  '/expedientes',
+  verifyApiHeaderToken,
+  expedientesRoutes
+);
 // router.use('/expedientes', expedientesRoutes);
 module.exports = router;

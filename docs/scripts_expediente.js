@@ -1,6 +1,6 @@
 require('dotenv').config();
 const getDb = require('../dao/mongodb');
-console.log(process.env.MONGOURI);
+console.log(process.env.MONGO_URI);
 const names = [
   'FULANITO',
   'MENGANITO',

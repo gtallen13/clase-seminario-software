@@ -33,7 +33,7 @@ router.get('/all', async(req,res)=>{
 router.get('/byid/:id', async(req,res)=>{
   try{
     const {id} = req.params;
-    const rows = await expedienteModel.getById(parseInt(id));
+    const rows = await expedienteModel.getById(id);
     res.status(200).json({status:'ok',expedientes:rows});
   } catch(ex){
     console.log(ex);
